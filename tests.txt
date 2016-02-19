@@ -1,0 +1,17 @@
+Repeated Word Counter Tests:
+
+Behavior: It checks if a word is the same as another word.
+Input: "Lorem", "Lorem"
+Output: True
+
+Behavior: It checks if a word is in a string of multiple words.
+Input: "Lorem ipsum", "Lorem"
+Output: True
+
+Behavior: It checks how many times a word appears in a string.
+Input: "One fish two fish red fish blue fish", "fish"
+Output: 4
+
+Behavior: It counts the matching word regardless of capitalization.
+Input: "Lorem ipsum", "LOREM"
+Output: 1
