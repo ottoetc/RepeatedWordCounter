@@ -1,3 +1,5 @@
+using System;
+
 namespace CountRepeatWords
 {
   public class RepeatCounter
@@ -5,11 +7,17 @@ namespace CountRepeatWords
     public int CountRepeats(string inputSentence, string countWord)
     {
       int wordCount = 0;
-      if (inputSentence == countWord);
+      string[] sentenceArray = inputSentence.Split(' ');
+      foreach (string word in sentenceArray)
       {
-        wordCount += 1;
+        if (word == countWord)
+        {
+          wordCount += 1;
+        }
+
       }
       return wordCount;
+
 
     }
   }
