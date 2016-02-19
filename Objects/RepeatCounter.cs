@@ -4,13 +4,15 @@ namespace CountRepeatWords
 {
   public class RepeatCounter
   {
-    public int CountRepeats(string inputSentence, string countWord)
+    public int CountRepeats(string inputSentence, string inputWord)
     {
       int wordCount = 0;
-      string[] sentenceArray = inputSentence.Split(' ');
+      string lowerWord = inputWord.ToLower();
+      string lowerSentence = inputSentence.ToLower();
+      string[] sentenceArray = lowerSentence.Split(' ');
       foreach (string word in sentenceArray)
       {
-        if (word == countWord)
+        if (word == lowerWord)
         {
           wordCount += 1;
         }

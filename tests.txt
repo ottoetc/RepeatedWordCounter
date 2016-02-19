@@ -16,6 +16,6 @@ Output: 4
 Why: Tests if the program can count multiple instances of the search word.
 
 Behavior: It counts the matching word regardless of capitalization.
-Input: "Lorem ipsum", "LOREM"
+Input: "Lorem", "LOREM"
 Output: 1
 Why: Tests if the program can find all instances of a word regardless of capitalization.

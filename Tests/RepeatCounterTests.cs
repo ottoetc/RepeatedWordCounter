@@ -22,6 +22,12 @@ namespace CountRepeatWords
       RepeatCounter testRepeatCounter = new RepeatCounter();
       Assert.Equal(4, testRepeatCounter.CountRepeats("one fish two fish red fish blue fish", "fish"));
     }
+    [Fact]
+    public void CountRepeats_Test_CountsCapitals()
+    {
+      RepeatCounter testRepeatCounter = new RepeatCounter();
+      Assert.Equal(1, testRepeatCounter.CountRepeats("lorem", "LOREM"));
+    }
   }
 
 }
