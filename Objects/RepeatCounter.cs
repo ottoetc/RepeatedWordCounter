@@ -1,4 +1,5 @@
 using System;
+using System.Text.RegularExpressions;
 
 namespace CountRepeatWords
 {
@@ -9,6 +10,7 @@ namespace CountRepeatWords
       int wordCount = 0;
       string lowerWord = inputWord.ToLower();
       string lowerSentence = inputSentence.ToLower();
+      lowerSentence = Regex.Replace(lowerSentence, @"[^a-z]", @" ");
       string[] sentenceArray = lowerSentence.Split(' ');
       foreach (string word in sentenceArray)
       {

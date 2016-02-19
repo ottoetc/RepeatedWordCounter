@@ -16,7 +16,7 @@ namespace CountRepeatWordsModule
       {
         RepeatCounter newRepeatCounter = new RepeatCounter();
         int score = newRepeatCounter.CountRepeats(Request.Form["input-sentence"], Request.Form["input-word"]);
-        return View["results.cshtml"];
+        return View["results.cshtml", score];
       };
     }
   }
