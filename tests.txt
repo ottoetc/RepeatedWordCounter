@@ -2,13 +2,13 @@ Repeated Word Counter Tests:
 
 Behavior: It checks if a word is the same as another word.
 Input: "lorem", "lorem"
-Output: True
-Why: Tests whether program can identify if one word equals another word.
+Output: 1
+Why: Tests whether program can identify if one word equals another word. Returns one because 1 word matches.
 
 Behavior: It checks if a word is in a string of multiple words.
 Input: "Lorem ipsum", "Lorem"
-Output: True
-Why: Tests whether program can find a matching word in a string of more than one word.
+Output: 1
+Why: Tests whether program can find a matching word in a string of more than one word. Returns one because 1 of the 2 words matches.
 
 Behavior: It checks how many times a word appears in a string.
 Input: "One fish two fish red fish blue fish", "fish"
@@ -18,4 +18,4 @@ Why: Tests if the program can count multiple instances of the search word.
 Behavior: It counts the matching word regardless of capitalization.
 Input: "Lorem ipsum", "LOREM"
 Output: 1
-Why: Tests if the program can find all instances of a word regardless of capitalization. 
+Why: Tests if the program can find all instances of a word regardless of capitalization.
