@@ -16,11 +16,8 @@ namespace CountRepeatWords
         {
           wordCount += 1;
         }
-
       }
       return wordCount;
-
-
     }
   }
 }
