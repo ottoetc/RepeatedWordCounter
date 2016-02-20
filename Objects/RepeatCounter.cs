@@ -5,7 +5,7 @@ namespace CountRepeatWords
 {
   public class RepeatCounter
   {
-    public int CountRepeats(string inputSentence, string inputWord)
+    public string CountRepeats(string inputSentence, string inputWord)
     {
       int wordCount = 0;
       string lowerWord = inputWord.ToLower();
@@ -19,7 +19,17 @@ namespace CountRepeatWords
           wordCount += 1;
         }
       }
-      return wordCount;
+      string countString = wordCount.ToString();
+      string timeOrTimes = "";
+      if (wordCount > 1)
+      {
+        timeOrTimes = " times!";
+      }
+      else
+      {
+        timeOrTimes = " time!";
+      }
+      return "The phrase: " + inputSentence + " Contains the word " + inputWord + " " + countString + timeOrTimes;
     }
   }
 }
