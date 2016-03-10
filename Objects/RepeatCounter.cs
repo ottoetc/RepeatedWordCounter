@@ -29,7 +29,7 @@ namespace CountRepeatWords
       {
         timeOrTimes = " time!";
       }
-      return "The phrase: " + inputSentence + " Contains the word " + inputWord + " " + countString + timeOrTimes;
+      return "The phrase: " + inputSentence + " contains the word " + inputWord + " " + countString + timeOrTimes;
     }
   }
 }
